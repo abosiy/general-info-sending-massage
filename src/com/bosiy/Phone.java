@@ -68,9 +68,8 @@ public class Phone {
     }
 
     public String receiveCall(String name, String number) {
-       return "Name: " + name + "\nNumber: " + number;
+        return "Name: " + name + "\nNumber: " + number;
     }
-
 
 
     @Override
