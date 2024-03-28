@@ -23,12 +23,12 @@ public class Phone {
         this.model = model;
     }
 
-    Phone() {
+    public Phone() {
 
     }
 
     public String getNumber() {
-        return number;
+        return this.number;
     }
 
     public void setNumber(String number) {
@@ -36,7 +36,7 @@ public class Phone {
     }
 
     public String getModel() {
-        return model;
+        return this.model;
     }
 
     public void setModel(String model) {
@@ -44,7 +44,7 @@ public class Phone {
     }
 
     public double getWeight() {
-        return weight;
+        return this.weight;
     }
 
     public void setWeight(double weight) {
@@ -52,7 +52,7 @@ public class Phone {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -63,9 +63,15 @@ public class Phone {
         return this.name + "; " + this.number + "; ";
     }
 
-    public String receiveCall() {
-        return "Calling: " + this.name + "; ";
+    public String receiveCall(String name) {
+        return "Calling: " + name + "; ";
     }
+
+    public String receiveCall(String name, String number) {
+       return "Name: " + name + "\nNumber: " + number;
+    }
+
+
 
     @Override
     public String toString() {
@@ -73,11 +79,11 @@ public class Phone {
                 + "; Weight: " + this.weight + "; ";
     }
 
-    public void sendMassage(String... numbers) {
+    public void sendMessage(String... numbers) {
 
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("Message sent to number: " + number +
-                    "; \nmassage: " + numbers[i]);
+                    "; \nmessage: " + numbers[i]);
         }
     }
 }

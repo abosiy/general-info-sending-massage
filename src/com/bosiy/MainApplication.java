@@ -15,9 +15,9 @@ public class MainApplication {
 
         System.out.println();
 
-        System.out.println(array[0].receiveCall());
-        System.out.println(array[1].receiveCall());
-        System.out.println(array[2].receiveCall());
+        System.out.println(array[0].receiveCall("Maksym"));
+        System.out.println(array[1].receiveCall("Andrew"));
+        System.out.println(array[2].receiveCall("Vlad"));
 
         System.out.println();
 
@@ -27,6 +27,10 @@ public class MainApplication {
 
         System.out.println();
 
-        array[1].sendMassage("Hello! :)");
+        System.out.println(array[0].receiveCall("Ivan", "0735541209"));
+
+        System.out.println();
+
+        array[1].sendMessage("Hello! :)");
     }
 }
